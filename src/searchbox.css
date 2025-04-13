@@ -1,8 +1,177 @@
-.Searchbox {
-    text-align: center;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Search Box Styling */
+.Searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.Searchbox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.TextField {
+    width: 100%;
+    max-width: 300px;
+}
+
+.Button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+/* Error Message */
+p {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Card Container */
 .cardContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.MuiCard-root {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.MuiCardMedia-root {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.MuiCardContent-root {
+    padding: 15px;
+}
+
+/* Typography Styling */
+.MuiTypography-root {
+    font-size: 1rem;
+    color: #333;
+}
+
+.MuiTypography-h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .Searchbox {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .Searchbox form {
+        width: 100%;
+    }
+
+    .TextField {
+        max-width: 100%;
+    }
+
+    .Button {
+        max-width: 100%;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MuiCard-root {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Special Adjustments for 484px Screen */
+@media (max-width: 484px) {
+    h1 {
+        font-size: 1.6rem;
+        /* Smaller font size for smaller screens */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .Searchbox {
+        padding: 15px;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .Searchbox form {
+        width: 100%;
+    }
+
+    .TextField {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .Button {
+        width: 100%;
+        max-width: 150px;
+        margin-top: 10px;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MuiCard-root {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .MuiCardMedia-root {
+        height: 180px;
+        /* Adjust image height for better fitting */
+    }
+
+    .MuiTypography-h5 {
+        font-size: 1.1rem;
+        /* Slightly smaller font size */
+    }
+
+    .MuiTypography-root {
+        font-size: 0.9rem;
+        /* Smaller font size for better readability on smaller screens */
+    }
 }
